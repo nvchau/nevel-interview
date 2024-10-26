@@ -33,6 +33,8 @@ module.exports = {
         black: '#000000',
         black1: '#000000B3',
         black2: '#00000099',
+        gray: '#A59E9E',
+        gray1: '#0000000F',
       },
       fontSize: {
         sm: ['14px', '24px'],

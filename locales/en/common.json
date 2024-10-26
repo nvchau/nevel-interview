@@ -1,7 +1,6 @@
 {
-  "title": "Title Common",
   "banner": {
-    "viewDetail": "Game Details"
+    "detail": "Game Details"
   },
   "menu": {
     "home": "Home",
