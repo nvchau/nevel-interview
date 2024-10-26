@@ -1,0 +1,33 @@
+.public-layout-banner {
+  .slider {
+    width: 100%;
+
+    .slick-dots {
+      left: -34%;
+      bottom: 38px;
+
+      @screen sm {
+        left: 0;
+        bottom: 30%;
+      }
+
+      button {
+        &::before {
+          font-size: 12px;
+          top: 1px;
+          left: -0.5px;
+          color: theme('colors.white') !important;
+        }
+      }
+
+      .slick-active {
+        border-radius: 50%;
+        border: 1px solid theme('colors.white');
+      }
+    }
+
+    img {
+      max-width: 100% !important;
+    }
+  }
+}
