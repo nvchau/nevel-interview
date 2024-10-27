@@ -1,0 +1,105 @@
+.multiple-product {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+
+  @screen md {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  .box-text {
+    padding: 20px;
+    height: 210px;
+    border-radius: 20px;
+    color: theme('colors.white');
+
+    @screen sm {
+      padding: 16px;
+      height: 167px;
+    }
+  }
+
+  .title {
+    margin-top: 15px;
+    color: theme('colors.white');
+    font-size: 22px;
+    line-height: 16px;
+
+    @screen sm {
+      font-size: 17px;
+      line-height: 12px;
+    }
+  }
+
+  .description {
+    margin-top: 18px;
+    font-size: 14px;
+    color: theme('colors.white' / 60%);
+
+    @screen sm {
+      margin-top: 14px;
+      font-size: 11px;
+      line-height: 16px;
+    }
+  }
+
+  .box-content {
+    border-radius: 28px;
+    padding: 20px;
+    background-color: theme('colors.gray6');
+    display: flex !important;
+    gap: 30px;
+
+    & > div {
+      width: 50%;
+    }
+
+    @screen sm {
+      padding: 16px;
+      gap: 24px;
+    }
+  }
+
+  .load_more {
+    display: none;
+
+    @screen sm {
+      display: inline-flex;
+      width: 100%;
+    }
+
+    &:global(.ant-btn.ant-btn-default) {
+      border-radius: 14px;
+      border-color: theme('colors.gray4');
+      background-color: theme('colors.gray4');
+    }
+  }
+
+  .slick-dots {
+    bottom: -40px;
+    position: relative;
+
+    button {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      top: 4px;
+      left: 4px;
+
+      &::before {
+        font-size: 12px;
+        top: 0px;
+        left: -1.5px;
+        color: theme('colors.gray5') !important;
+      }
+    }
+
+    .slick-active {
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      border: 1px solid theme('colors.gray5');
+    }
+  }
+}

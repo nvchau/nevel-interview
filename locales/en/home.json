@@ -1,5 +1,4 @@
 {
-  "title": "Home title",
   "placeholder": {
     "search": "Search"
   },
@@ -10,7 +9,7 @@
     "filter": "Filter",
     "search": "Search"
   },
-  "menuSp": {
+  "menuMobile": {
     "home": "Home",
     "timeLine": "TimeLine",
     "allGame": "All\nGames"

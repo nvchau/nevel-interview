@@ -1,0 +1,95 @@
+.side-bar {
+  .search {
+    padding-bottom: 20px;
+    border-bottom: 1px solid theme('colors.gray1');
+
+    .input {
+      border: none;
+
+      &:focus-within {
+        box-shadow: none;
+      }
+
+      > input {
+        height: 20px;
+        &::placeholder {
+          line-height: 20px;
+          font-weight: bold;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  .menu {
+    margin-top: 15px;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+
+    @screen sm {
+      margin-top: 0;
+      flex-direction: row;
+      gap: 0;
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      border-bottom: 1px solid theme('colors.gray3');
+      border-top: 1px solid theme('colors.gray3');
+    }
+
+    .item {
+      display: flex;
+      gap: 5px;
+      align-items: center;
+      cursor: pointer;
+      transition: all 0.3s;
+      color: theme('colors.gray3');
+
+      &:hover,
+      &:focus,
+      &:active {
+        color: theme('colors.black');
+
+        .title {
+          transition: all 0.3s;
+          color: theme('colors.black');
+        }
+      }
+
+      @screen sm {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 0;
+        position: relative;
+
+        &::before {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          height: 3px;
+          width: 0;
+          transition: all 0.3s;
+        }
+
+        &:hover {
+          &::before {
+            width: 100%;
+            background: theme('colors.black');
+          }
+        }
+      }
+    }
+
+    .title {
+      color: theme('colors.gray3');
+      font-weight: 600;
+      line-height: 20px;
+
+      @screen sm {
+        white-space: pre-line;
+        line-height: 10px;
+        font-size: 10px;
+      }
+    }
+  }
+}

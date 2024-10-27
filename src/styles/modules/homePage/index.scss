@@ -1,0 +1,65 @@
+@import 'sideBar.scss';
+@import 'productCarousel.scss';
+@import 'singleProduct.scss';
+@import 'multipleProduct.scss';
+
+.home-page {
+  padding: 100px 0;
+  margin: 0 auto;
+  max-width: theme('maxWidth.xl');
+
+  @screen md {
+    padding: 30px 16px 20px;
+  }
+
+  @screen sm {
+    padding: 0;
+  }
+
+  .wrapper {
+    display: flex;
+    gap: 40px;
+    padding: 0 20px 20px;
+
+    @screen sm {
+      flex-direction: column;
+      gap: 20px;
+      padding: 0;
+    }
+
+    .content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 85px;
+
+      .filter {
+        width: 146px;
+        height: 28px;
+        border-radius: 2px;
+        font-weight: bold;
+
+        .ant-select {
+          .ant-select-selector {
+            box-shadow: none;
+          }
+        }
+      }
+    }
+  }
+
+  .load-more {
+    & button {
+      padding: 8px 11px !important;
+      box-shadow: none;
+      color: theme('colors.gray2');
+      background-color: them('colors.gray4');
+
+      &:hover,
+      &:active,
+      &:focus {
+        color: theme('colors.black');
+      }
+    }
+  }
+}
