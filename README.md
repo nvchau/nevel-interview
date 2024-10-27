@@ -16,8 +16,9 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## Deploy on Vercel
-
+## Deploy
+#### Check seult here
+http://103.77.243.136:3000/
 ## Result
 #### Desktop
 ![pc](https://github.com/user-attachments/assets/92acbc4c-1887-4bde-aab8-0ce1727eda3c)
