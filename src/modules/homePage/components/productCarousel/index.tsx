@@ -1,6 +1,5 @@
 import { Button } from "antd";
 import clsx from "clsx";
-import useTranslation from "next-translate/useTranslation";
 import { PropsWithChildren } from "react";
 
 import { Typography } from "@/components";
@@ -11,7 +10,6 @@ import { useWindowResize } from "@/hooks";
 import { ProductCarouselProps } from "../../declare";
 
 export const ProductCarousel = ({ title, children, className, titleClassName, childrenClassName, filter }: ProductCarouselProps & PropsWithChildren) => {
-  const { t } = useTranslation('home');
   const { isMobileScreen } = useWindowResize();
 
   return (
